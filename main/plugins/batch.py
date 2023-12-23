@@ -103,21 +103,21 @@ async def cancel(event):
     
 async def run_batch(userbot, client, sender, countdown, link):
     for i in range(len(ids)):
-        timer = 6
+        timer = 0.6
         if i < 100:
-            timer = 2
+            timer = 0.2
         elif i < 1000 and i > 100:
-            timer = 3
+            timer = 0.3
         elif i < 10000 and i > 1000:
-            timer = 4
+            timer = 0.4
         elif i < 50000 and i > 10000:
-            timer = 5
+            timer = 0.5
         elif i < 100000 and i > 50000:
-            timer = 6
+            timer = 0.6
         elif i < 200000 and i > 100000:
-            timer = 8
+            timer = 0.8
         elif i < 1000000: 
-            timer = 10
+            timer = 1
         
         
         if 't.me/c/' not in link:
